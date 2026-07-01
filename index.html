@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Reagan Nguyen — Full Stack Developer</title>
+  <meta name="description" content="Reagan Nguyen's portfolio — full stack web projects, experience, and skills." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚡</text></svg>" />
+</head>
+<body>
+  <header class="nav">
+    <nav class="container nav-inner">
+      <a href="#top" class="nav-logo">RN<span class="accent">.</span></a>
+      <ul class="nav-links">
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="top">
+    <!-- ============ HERO ============ -->
+    <section class="hero container">
+      <p class="hero-kicker">Hi, my name is</p>
+      <h1 class="hero-name">Reagan Nguyen<span class="accent">.</span></h1>
+      <h2 class="hero-tagline">I build full stack web applications.</h2>
+      <p class="hero-blurb">
+        I'm a developer based in Minnesota with a background spanning software
+        development, IT systems, and technical support. This site is home base
+        for my full stack side projects — live demos, source code, and the
+        stories behind them.
+      </p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="#projects">View My Projects</a>
+        <a class="btn btn-ghost" href="#contact">Get In Touch</a>
+      </div>
+    </section>
+
+    <!-- ============ PROJECTS ============ -->
+    <section id="projects" class="container section">
+      <h2 class="section-title"><span class="section-num">01.</span> Projects</h2>
+      <p class="section-sub">Full stack side projects — each card links to the live demo and source code.</p>
+      <div id="project-grid" class="project-grid">
+        <!-- Rendered from projects.js -->
+      </div>
+    </section>
+
+    <!-- ============ EXPERIENCE ============ -->
+    <section id="experience" class="container section">
+      <h2 class="section-title"><span class="section-num">02.</span> Experience</h2>
+      <ol class="timeline">
+        <li class="timeline-item">
+          <div class="timeline-when">Feb 2026 — Present</div>
+          <div class="timeline-body">
+            <h3>Technical Customer Care Representative <span class="at">@ HHAeXchange</span></h3>
+            <p>Resolving technical issues for a healthcare SaaS platform with HIPAA-aware
+               practices — troubleshooting across ticketing systems, user access / MFA
+               support, and vendor coordination.</p>
+          </div>
+        </li>
+        <li class="timeline-item">
+          <div class="timeline-when">Sep 2019 — Present</div>
+          <div class="timeline-body">
+            <h3>Ticket Resolution Lead <span class="at">@ Minnesota Vikings</span></h3>
+            <p>Leading ticket resolution operations — triaging, escalating, and closing
+               issues on game days and beyond, with a focus on documentation and
+               knowledge management.</p>
+          </div>
+        </li>
+        <li class="timeline-item">
+          <div class="timeline-when">May 2025</div>
+          <div class="timeline-body">
+            <h3>IT Specialist &amp; Associate <span class="at">@ LPAV</span></h3>
+            <p>Supported IT infrastructure and end users — Windows and macOS environments,
+               Microsoft 365 administration, and MSP coordination.</p>
+          </div>
+        </li>
+        <li class="timeline-item">
+          <div class="timeline-when">Sep 2022</div>
+          <div class="timeline-body">
+            <h3>Software Developer <span class="at">@ University of Minnesota — Mechanical Engineering</span></h3>
+            <p>Built software supporting mechanical engineering research — scripting,
+               data processing, and tooling in Python and related technologies.</p>
+          </div>
+        </li>
+      </ol>
+    </section>
+
+    <!-- ============ SKILLS ============ -->
+    <section id="skills" class="container section">
+      <h2 class="section-title"><span class="section-num">03.</span> Skills</h2>
+      <div class="skills-groups">
+        <div class="skill-group">
+          <h3>Languages</h3>
+          <ul class="chip-list">
+            <li>Python</li><li>Java</li><li>SQL</li><li>C</li><li>R</li>
+            <li>JavaScript</li><li>Shell</li>
+          </ul>
+        </div>
+        <div class="skill-group">
+          <h3>Tools &amp; Platforms</h3>
+          <ul class="chip-list">
+            <li>Git</li><li>Linux (Ubuntu, Kali)</li><li>Jira</li>
+            <li>Salesforce Service Cloud</li><li>Microsoft 365</li>
+            <li>Windows 7–11</li><li>macOS</li>
+          </ul>
+        </div>
+        <div class="skill-group">
+          <h3>Practices</h3>
+          <ul class="chip-list">
+            <li>HIPAA-aware practices</li><li>Knowledge management</li>
+            <li>Documentation</li><li>MFA / user-access support</li>
+            <li>Vendor &amp; MSP coordination</li><li>Ticketing systems</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ EDUCATION ============ -->
+    <section id="education" class="container section">
+      <h2 class="section-title"><span class="section-num">04.</span> Education</h2>
+      <div class="edu-card">
+        <h3>University of Minnesota — Duluth</h3>
+        <p>Bachelor's Degree</p>
+      </div>
+    </section>
+
+    <!-- ============ CONTACT ============ -->
+    <section id="contact" class="container section contact">
+      <h2 class="section-title"><span class="section-num">05.</span> Get In Touch</h2>
+      <p class="section-sub">
+        Whether it's a role, a project, or just a question about something I built —
+        my inbox is open.
+      </p>
+      <a class="btn btn-primary btn-lg" href="mailto:reagannguyen92@gmail.com">Say Hello</a>
+      <ul class="contact-links">
+        <li><a href="mailto:reagannguyen92@gmail.com">reagannguyen92@gmail.com</a></li>
+        <li><a href="https://github.com/reagannwin" target="_blank" rel="noopener">GitHub</a></li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>Designed &amp; built by Reagan Nguyen · <a href="https://github.com/reagannwin/reaganwebsite" target="_blank" rel="noopener">Source</a></p>
+  </footer>
+
+  <script src="projects.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>
