@@ -1,0 +1,19 @@
+# Model weights (downloaded on first run)
+*.pt
+*.onnx
+
+# Videos and analysis output
+data/
+output/
+*.mp4
+*.mkv
+*.avi
+*.mov
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+.pytest_cache/
+*.egg-info/

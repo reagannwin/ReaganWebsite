@@ -17,13 +17,16 @@
  */
 const PROJECTS = [
   {
-    title: "Example: Task Tracker",
+    title: "Football CV — Broadcast Play Tracker",
     blurb:
-      "REPLACE ME — a sample entry showing the format. A full stack task " +
-      "tracker with user accounts, a REST API, and a React frontend.",
-    stack: ["React", "Node.js", "Express", "PostgreSQL"],
+      "Computer vision pipeline that watches American football broadcast " +
+      "footage and produces play-by-play insights: detects and tracks every " +
+      "player, splits teams by jersey color, auto-segments the broadcast " +
+      "into plays, and reports per-player speed and distance in real yards " +
+      "and mph via click-to-calibrate field mapping.",
+    stack: ["Python", "YOLOv8", "OpenCV", "ByteTrack", "scikit-learn"],
     live: null,
-    source: null,
+    source: "https://github.com/reagannwin/ReaganWebsite/tree/main/football-cv",
     featured: true,
   },
   {

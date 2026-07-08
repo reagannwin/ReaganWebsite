@@ -1,0 +1,26 @@
+# Football CV pipeline configuration.
+# CPU laptop preset — see README for the GPU preset to use at home.
+
+video:
+  frame_stride: 3        # analyze every Nth frame (1 = every frame; raise for speed)
+  max_frames: 0          # 0 = process the whole video
+
+detection:
+  model: yolov8n.pt      # nano model for CPU; use yolov8m.pt or yolov8x.pt on GPU
+  device: auto           # auto | cpu | cuda:0
+  confidence: 0.35
+  imgsz: 640             # inference resolution; 1280 on GPU catches small/far players
+
+teams:
+  warmup_frames: 60      # analyzed frames used to learn the two jersey colors
+  min_votes: 3           # sightings needed before a track gets a team label
+
+plays:
+  start_speed: 1.6       # mean player speed (yd/s or px-equivalent) that starts a play
+  end_speed: 0.7         # speed the action must fall below to end a play
+  min_play_seconds: 3.0  # discard segments shorter than this (replays flashes, noise)
+  merge_gap_seconds: 1.5 # merge segments separated by less than this
+  cut_threshold: 0.5     # histogram correlation below this = camera cut
+
+output:
+  dir: output            # per-video results land in output/<video-name>/

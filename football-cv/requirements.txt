@@ -1,0 +1,9 @@
+ultralytics>=8.2
+supervision>=0.20,<0.30  # ByteTrack is deprecated in 0.28, removed in 0.30
+opencv-python>=4.9
+numpy>=1.26
+scikit-learn>=1.4
+pandas>=2.2
+PyYAML>=6.0
+yt-dlp>=2024.7.1
+pytest>=8.0
