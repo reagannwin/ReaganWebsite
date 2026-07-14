@@ -30,23 +30,52 @@ const PROJECTS = [
     featured: true,
   },
   {
-    title: "Example: Weather Dashboard",
+    title: "Minneapolis Food Inspections Analysis",
     blurb:
-      "REPLACE ME — another sample. Pulls live data from a public API and " +
-      "charts it with a responsive UI.",
-    stack: ["JavaScript", "Chart.js", "REST APIs"],
+      "Cleaned and analyzed 41,646 City of Minneapolis food-inspection " +
+      "records covering 2,916 facilities (2023–2025) to identify what " +
+      "drives pass/fail outcomes — violation patterns, risk tiers, and " +
+      "neighborhood trends — as a practical reference for anyone opening " +
+      "a food business in the city.",
+    stack: ["Python", "pandas", "Jupyter"],
     live: null,
-    source: null,
+    source: "https://github.com/reagannwin/Minneapolis-Food-Inspections",
     featured: false,
   },
   {
-    title: "Example: CLI Toolkit",
+    title: "Movie Discovery App",
     blurb:
-      "REPLACE ME — a third sample. A command-line utility suite for " +
-      "automating everyday dev tasks.",
-    stack: ["Python", "Shell"],
+      "Single-page React app for browsing and searching movies from the " +
+      "TMDB API, with debounced search to cut redundant requests while " +
+      "you type. The trending section is backed by Appwrite — per-movie " +
+      "search counts are persisted and ranked, so trending reflects real " +
+      "user demand rather than a static list.",
+    stack: ["React", "Vite", "Tailwind CSS", "Appwrite", "TMDB API"],
     live: null,
-    source: null,
+    source: "https://github.com/reagannwin/MovieProject",
+    featured: false,
+  },
+  {
+    title: "Bank Customer Churn Prediction",
+    blurb:
+      "Trained and compared six classification models — logistic " +
+      "regression through XGBoost — to predict which bank customers are " +
+      "likely to churn. Corrected class imbalance with SMOTE and tuned " +
+      "each model with GridSearchCV, evaluating on ROC-AUC.",
+    stack: ["Python", "scikit-learn", "XGBoost", "SMOTE"],
+    live: null,
+    source: "https://github.com/reagannwin/BankCustomerChurn",
+    featured: false,
+  },
+  {
+    title: "DJ Trivia Study Bot",
+    blurb:
+      "Web scraper that collects trivia source material and turns it into " +
+      "prompt-engineered LLM study sessions. Field-tested: tied for first " +
+      "place at a December 2025 trivia event.",
+    stack: ["Python", "Web scraping", "LLM prompt engineering"],
+    live: null,
+    source: "https://github.com/reagannwin/WebScrapingProject",
     featured: false,
   },
 ];
